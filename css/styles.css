@@ -1,0 +1,140 @@
+body {
+  position: relative;
+}
+
+.navigation{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 100;
+	width: 100vw;
+	color: white;
+	border: none;
+	background: black;
+	border-radius: 0px;
+}
+.navbar .navbar-header, .navbar .navbar-nav{
+	float: left;
+	cursor: pointer;
+}
+.navbar li a{
+	-moz-transition: background 0.3s ease-in-out;
+    -webkit-transition: background 0.3s eaease-in-outse;
+    -o-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+}
+.navbar-default .navbar-nav > .active > a{
+	background-color: rgba(255,255,255,0.9);
+	color: black !important;
+}
+.navbar-default .navbar-nav > li > a{
+	color: white;
+}
+
+.navigation a, .navbar-brand{
+	color: white !important;
+	text-decoration: none;
+}
+
+.clear{
+	clear: both;
+}
+.anchor{
+	position: relative;
+	top: -40px;
+	clear: both;
+}
+.hero-wrapper{
+	position: realtive;
+	width: 100%;
+	height:100vh;
+}
+.hero{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100vw;
+	height: 100vh;
+	background-image: url("../img/saoPaulo/02.jpg");
+	background-repeat: none;
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+}
+.hero .overlay{
+	width: 100%;
+	height: 100%;
+	background: black;
+	background: radial-gradient(rgba(0,0,0,0.5), black ); /* Standard syntax */
+	z-index: 10;
+}
+
+.hero h1{
+	font-family: 'Bungee Hairline', cursive;
+	font-size: 50px;
+	color: white;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	top: 50vh;
+	transform: translateY(-50%);
+}
+h2{
+	font-family: 'Bungee Hairline', cursive;
+}
+
+.card{
+	padding: 0;
+}
+.card .overlay p{
+	color: white;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 30px;
+	font-family: 'Bungee Hairline', cursive;
+}
+
+.card .overlay{
+	position: absolute;
+	top:0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: black;
+	opacity: 0;
+	z-index: 10;
+	-moz-transition: opacity 0.5s ease-in-out;
+    -webkit-transition: opacity 0.5s eaease-in-outse;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+.card:hover .overlay{
+	opacity: 0.7;
+
+}
+@media screen and (max-width: 768px){
+	.navbar .navbar-header{
+		float: none;
+	}
+	.navbar-nav{
+		height: 0px;
+		float: none;
+		text-align: center;
+		overflow: hidden;
+		margin: 0px;
+
+		
+	}
+	#menu-content{
+		-moz-transition: height 0.5s ease-in-out;
+	    -webkit-transition: height 0.5s eaease-in-outse;
+	    -o-transition: height 0.5s ease-in-out;
+	    transition: height 0.5s ease-in-out;
+	}
+	.navbar ul{
+		width: 100%;
+	}
+}
